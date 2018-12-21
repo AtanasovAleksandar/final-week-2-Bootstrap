@@ -1,0 +1,721 @@
+$primary: #f8f9fa;
+$transparent: rgba(55, 0, 255, 0.103);
+$secondary: #286fff;
+$section: #247BA0;
+$section-odd:#fff8dc;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+    }
+}
+
+.col-md-12 {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.header-section {
+    display: block;
+    position: relative;
+    width: 99% !important;
+}
+
+#background-video {
+    margin: 0px !important;
+    padding: 0px !important;
+    background: black !important;
+    object-fit: fill; // position: absolute;
+    z-index: -1;
+}
+
+.navbar {
+    width: 100%;
+    background-color: transparent !important;
+    margin-left: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-brand {
+    .color-text {
+        color: $secondary;
+        font-size: 20px;
+    }
+}
+
+.navbar-brand:hover {
+    background-color: transparent;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    background-color: $secondary;
+}
+
+.nav {
+    margin-top: 12px;
+}
+
+.nav-search {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+.form-inline {
+    .form-control {
+        margin-right: 20px;
+    }
+}
+
+.jumbotron {
+    position: absolute;
+    left: 130px;
+    top: 145px;
+    color: white;
+    font-size: 50px;
+    background-color: transparent !important;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 1.5;
+    .header-img {
+        img {
+            width: 40%;
+            position: absolute;
+            right: -85px;
+            top: 30px;
+        }
+    }
+    p {
+        width: 70%;
+    }
+}
+
+section {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: $section;
+    .curve-box {
+        height: 800px;
+        width: 50%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        background-color: black;
+        
+    }
+    .about-content {
+        height: 800px;
+    }
+    img {
+        position: absolute;
+        width: 70%;
+        z-index: 5;
+        left: 19px;
+        top: 145px;
+    }
+    .about-description {
+        position: absolute;
+        right: 22px;
+        top: 75px;
+        width: 50%;
+        text-align: center;
+        position: absolute;
+        left: 57%;
+        top: 120px;
+        width: 35%;
+        text-align: center;
+        box-shadow: 2px -6px 24px 3px black;
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            margin-top: 15px;
+        }
+    }
+}
+
+.service-section {
+    height: 800px;
+    background-color: $section;
+    position: relative;
+    .service-desc {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        width: 45%;
+        .service-title {
+            width: 79%;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        .card {
+            width: 79%;
+            height: 185px;
+            margin-top: 20px;
+            background-color: transparent;
+            border: 1px solid black;
+            box-shadow: 2px -6px 24px 3px black;
+            .card:hover {
+                background-color: $primary;
+                opacity: 0.4;
+            }
+            .card-img-top {
+                top: -13px;
+                width: 40% !important;
+                left: 7%;
+            }
+            .card-body {
+                width: 50%;
+                position: absolute;
+                right: 0;
+                .card-title {
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .fas {
+        position: absolute;
+        right: 15px;
+        font-size: 41px;
+        bottom: 10px;
+        color: white;
+    }
+    .fas:hover {
+        color: black;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .img-section {
+        clip-path: polygon(57% 0, 100% 1%, 100% 100%, 0 100%, 0 80%);
+        background-color: black;
+        height: 800px;
+        .rocket-img {
+            position: absolute;
+            width: 70%;
+            top: 36%;
+            left: 24%;
+        }
+    }
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .portfolio-title {
+        width: 77%;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .card {
+        width: 30%;
+        margin-left: 75px;
+        margin-top: 20px;
+        margin-left: 75px;
+        margin-top: 20px;
+        height: 200px;
+        background-color: transparent;
+        box-shadow: 4px 4px 0px 2px black;
+        border: 2px solid black;
+        .card-img-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            z-index: 1;
+        }
+    }
+    .card:hover {
+        background-color: $transparent;
+        cursor: pointer;
+    }
+}
+
+.container {
+    max-width: 1270px !important;
+}
+
+.about-container {
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        margin-top: 45px;
+    }
+    form {
+        margin-left: 35px;
+        margin-top: 36px;
+        height: 400px;
+        color: white;
+    }
+    .map {
+        position: relative;
+        height: 400px;
+        position: relative;
+        height: 400px;
+        margin-right: 35px;
+        margin-top: 20px;
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+#emailHelp {
+    color: white !important;
+}
+
+footer {
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+}
+
+// hover 
+.overlay {
+    visibility: hidden;
+    color: white;
+    a {
+        color: white;
+    }
+    a:hover {
+        color: white;
+    }
+}
+
+.portfolio-container {
+    .card:hover .overlay {
+        visibility: visible;
+        transition: 1s ease;
+        z-index: 5
+    }
+    .card:hover .card-img-top {
+        opacity: 0.5;
+    }
+}
+
+.form-inline {
+    .form-control {
+        width: 85%;
+    }
+}
+
+// .form-inline {
+//     .form-control {
+//         width: 85%!important;
+//     }
+// }
+@media only screen and (max-width: 999px) and (min-width: 740px) {
+    .navbar-nav {
+        .nav-item {
+            a {
+                text-align: center;
+            }
+        }
+    }
+    .jumbotron {
+        p {
+            font-size: 20px;
+            margin-top: 150px;
+            width: 100%;
+        }
+        .header-img img {
+            display: none;
+        }
+    }
+    .lead {
+        margin-top: 0px !important;
+    }
+    section img {
+        position: absolute;
+        width: 70%;
+        z-index: 5;
+        left: 35px;
+        top: 235px;
+    }
+    .about-description {
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+    .service-section {
+        .img-section {
+            width: 45%;
+            .rocket-img {
+                top: 47%;
+            }
+        }
+        .service-desc {
+            position: absolute !important;
+            width: 100% !important;
+            bottom: 135px !important;
+            top: auto !important;
+            margin-left: -10px !important;
+            .card {
+                width: 50% !important;
+                height: 174px;
+                .card-img-top {
+                    width: 166px;
+                }
+            }
+        }
+    }
+    .portfolio-section {
+        .portfolio-title {
+            width: 100%;
+        }
+        .portfolio-container {
+            .card {
+                max-width: 80%;
+                position: relative;
+                width: 100%;
+                left: 57px;
+                margin-left: 30px;
+                .card-img-top {
+                    height: 170px;
+                }
+            }
+        }
+    }
+    .card {
+        .card-body {
+            span {
+                .fas {
+                    bottom: -25px !important;
+                }
+            }
+        }
+    }
+    .form-inline {
+        .form-control {
+            width: 85%;
+        }
+    }
+}
+
+@media only screen and (max-width: 739px) and (min-width: 400px) {
+    video {
+        height: 250px;
+    }
+    .navbar-nav {
+        .nav-item {
+            a {
+                text-align: center;
+            }
+        }
+    }
+    .jumbotron {
+        display: none;
+    }
+    .about-section {
+        height: 956px;
+        .curve-box {
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 41%, 0% 35%);
+            width: 100%;
+            .img-fluid {
+                width: 50%!important;
+                height: auto;
+                top: -8px!important;
+                left: 26%!important;
+            }
+        }
+        .about-description {
+            max-width: 100%;
+            position: absolute !important;
+            left: 0px !important;
+            width: 100% !important;
+            top: 351px !important;
+            p {
+                padding: 15px;
+                width: 94%;
+                bottom: 10px;
+            }
+            h2 {
+                top: 0px !important;
+                position: relative;
+                bottom: 1px;
+                margin-top: 40px;
+            }
+        }
+        .about-description {
+            max-width: 100%;
+            h2 {
+                top: 230px;
+                position: relative;
+                bottom: 1px;
+                margin-top: 40px;
+            }
+            p {
+                padding: 15px;
+                width: 94%;
+                bottom: 60px;
+            }
+        }
+    }
+    .service-section {
+        .img-section {
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 46%, 0% 35%);
+            max-width: 100%;
+        }
+    }
+    .service-section {
+        height: 1200px;
+        .service-desc {
+            position: absolute;
+            width: 100%;
+            bottom: 125px;
+            top: auto;
+            .card {
+                width: 85%;
+                margin-left: 25px !important;
+                .card-img-top {
+                    top: -2px;
+                    width: 45%;
+                    left: 7%;
+                }
+            }
+            .service-title {
+                margin-left: 30px;
+            }
+        }
+        .img-section {
+            .rocket-img {
+                position: absolute;
+                width: 50%;
+                top: 10% !important;
+                left: 31%;
+            }
+        }
+        .fas {
+            bottom: -20px !important;
+        }
+    }
+    .portfolio-section {
+        .portfolio-title {
+            width: 100%;
+            margin-top: 0px;
+        }
+        .card {
+            width: 100%;
+            margin: 47px;
+        }
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .portfolio-container {
+        .card {
+            .card-img-top {
+                width: 60%;
+                left: 84px;
+                top: 0;
+                margin: 0px;
+            }
+        }
+    }
+    .about-container {
+        form {
+            width: 85% !important;
+            max-width: 100%;
+            margin-left: 31px;
+            padding: 0px;
+            button {
+                width: 100%;
+            }
+        }
+        .map {
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 765px) {
+    .service-section {
+        .service-desc {
+            .card {
+                width: 95% !important;
+            }
+        }
+    }
+    .about-container {
+        form {
+            margin-left: 31px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    video {
+        height: 250px;
+    }
+    .navbar-nav {
+        .nav-item {
+            a {
+                text-align: center;
+            }
+        }
+    }
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: absolute;
+        bottom: 7px;
+        right: 20px !important;
+    }
+    .form-inline {
+        .form-control {
+            width: 70% !important;
+        }
+    }
+    .jumbotron {
+        display: none;
+    }
+    .about-section {
+        height: 956px;
+        .curve-box {
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 42%, 0% 35%);
+            width: 100%;
+            .img-fluid {
+                width: 55%;
+                height: auto;
+                top: 77px;
+                left: 23%;
+            }
+        }
+        .about-description {
+            max-width: 100%;
+            position: absolute !important;
+            left: 0px !important;
+            width: 100% !important;
+            top: 351px !important;
+            p {
+                padding: 15px;
+                width: 94%;
+                bottom: 10px;
+            }
+            h2 {
+                top: 0px !important;
+                position: relative;
+                bottom: 1px;
+                margin-top: 40px;
+            }
+        }
+        .about-description {
+            max-width: 100%;
+            h2 {
+                top: 230px;
+                position: relative;
+                bottom: 1px;
+                margin-top: 40px;
+            }
+            p {
+                padding: 8px;
+                width: 94%;
+                bottom: 60px;
+            }
+        }
+    }
+    .service-section {
+        .img-section {
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 46%, 0% 35%);
+            max-width: 100%;
+        }
+    }
+    .service-section {
+        height: 1200px;
+        .service-desc {
+            position: absolute;
+            width: 100%;
+            bottom: 125px;
+            top: auto;
+            .card {
+                width: 85%;
+                margin-left: 25px !important;
+                left: -18px;
+                .card-img-top {
+                    top: 32px !important;
+                    width: 45%;
+                    left: 7%;
+                }
+            }
+            .service-title {
+                margin-left: 30px;
+            }
+        }
+        .img-section {
+            .rocket-img {
+                position: absolute;
+                width: 69%;
+                top: 10% !important;
+                left: 21%;
+            }
+        }
+        .fas {
+            bottom: -20px !important;
+        }
+    }
+    .portfolio-section {
+        .portfolio-title {
+            width: 100%;
+            margin-top: 0px;
+        }
+        .card {
+            width: 100%;
+            margin: 47px;
+        }
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .portfolio-container {
+        .card {
+            .card-img-top {
+                width: 60%;
+                left: 49px;
+                top: 42px;
+                margin: 0px;
+            }
+        }
+    }
+    .about-container {
+        form {
+            width: 85% !important;
+            max-width: 100%;
+            margin-left: 31px;
+            padding: 0px;
+            button {
+                width: 100%;
+            }
+        }
+        .map {
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
